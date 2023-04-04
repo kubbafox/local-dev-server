@@ -1,0 +1,23 @@
+{
+  "name": "local-dev-server",
+  "version": "1.0.0",
+  "description": "local-dev-server to support debugging",
+  "main": "index.js",
+  "scripts": {
+    "jsonServer": "json-server --watch json-server/db/db.json --routes json-server/routes/routes.json --middlewares json-server/middlewares/middleware.js",
+    "killJsonServer": "kill -9 $(lsof -t -i:3000)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kubbafox/local-dev-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kubbafox/local-dev-server/issues"
+  },
+  "homepage": "https://github.com/kubbafox/local-dev-server#readme",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
